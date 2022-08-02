@@ -3,7 +3,7 @@
 # from unicodedata import name
 from flask import Flask, render_template, request
 import joblib
-
+heroku create myapp --buildpack heroku/python
 model = joblib.load('predict_79.pkl')
 
 # initilaise the app
